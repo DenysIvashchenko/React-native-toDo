@@ -4,7 +4,7 @@ import { StyleSheet, View, TextInput, Button } from "react-native"
 export default function AddItems({ submitHandler }) {
   const [text, setText] = useState("")
 
-  const changHandel = (val) => {
+  const changeHandler = (val) => {
     setText(val)
   }
   return (
@@ -12,7 +12,7 @@ export default function AddItems({ submitHandler }) {
       <TextInput
         style={styles.input}
         placeholder="put new todos..."
-        onChangeText={changHandel}
+        onChangeText={changeHandler}
         value={text}
       />
       <Button

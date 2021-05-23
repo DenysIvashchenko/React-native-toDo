@@ -21,7 +21,7 @@ export default function App() {
     { text: "drink a cup of tea", key: "4" },
   ])
 
-  const pressHandel = (key) => {
+  const pressHandler = (key) => {
     setData((prev) => {
       return prev.filter((item) => item.key !== key)
     })
@@ -49,7 +49,7 @@ export default function App() {
             <FlatList
               data={data}
               renderItem={({ item }) => (
-                <ToDoItem item={item} pressHandel={pressHandel}>
+                <ToDoItem item={item} pressHandler={pressHandler}>
                   {item.text}
                 </ToDoItem>
               )}
