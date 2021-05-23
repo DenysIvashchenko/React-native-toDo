@@ -18,7 +18,7 @@ export default function App() {
     { text: "buy something", key: "1" },
     { text: "smoke shisha", key: "2" },
     { text: "create native app", key: "3" },
-    { text: "drin a cup of tea", key: "4" },
+    { text: "drink a cup of tea", key: "4" },
   ])
 
   const pressHandel = (key) => {
@@ -68,8 +68,10 @@ const styles = StyleSheet.create({
   },
   content: {
     padding: 40,
+    flex: 1,
   },
   list: {
     marginTop: 20,
+    flex: 1,
   },
 })
